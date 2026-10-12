@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>邵欣玥命名报告</title>
+<style>[hidden]{display:none!important}img{max-width:100%}
+:root{
+  /* 版式：单栏"名帖"式长文——顶部竖排名帖加朱印，下接八节档案；玉色为主调，月白为纸 */
+  --paper:#F2F5F3; --card:#FFFFFF; --ink:#1C2628; --muted:#5A6869; --line:#D6DFDB;
+  --jade:#2B6F5E; --jade-soft:#E1EEE9; --moon:#566E8C; --seal:#AE3626; --seal-ink:#FFF7F2;
+  --warn:#8E5B10; --warn-soft:#F5ECDD; --good-soft:#E4F0EA;
+  --wood:#3B8752; --fire:#C5432D; --earth:#AD7A31; --metal:#7A8794; --water:#2C6BA3; --track:#E3E9E6; --chip-ink:#FFFFFF;
+  --serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0E1416; --card:#151D20; --ink:#E4EBE9; --muted:#9AA9A8; --line:#26332F;
+  --jade:#6CC1A9; --jade-soft:#17302A; --moon:#A3B6D0; --seal:#D0594A; --seal-ink:#FFF7F2;
+  --warn:#E0AE5C; --warn-soft:#2D2416; --good-soft:#15291F;
+  --wood:#66B97E; --fire:#E46A52; --earth:#D3A25C; --metal:#A9B5C1; --water:#5E9FD6; --track:#22302C; --chip-ink:#0E1416; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1416; --card:#151D20; --ink:#E4EBE9; --muted:#9AA9A8; --line:#26332F;
+  --jade:#6CC1A9; --jade-soft:#17302A; --moon:#A3B6D0; --seal:#D0594A; --seal-ink:#FFF7F2;
+  --warn:#E0AE5C; --warn-soft:#2D2416; --good-soft:#15291F;
+  --wood:#66B97E; --fire:#E46A52; --earth:#D3A25C; --metal:#A9B5C1; --water:#5E9FD6; --track:#22302C; --chip-ink:#0E1416; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.75 var(--sans);-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding-inline:18px;padding-block:28px 56px}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;margin:0}
+h2{font-size:1.45rem;font-weight:700;line-height:1.35}
+h3{font-size:1.08rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;color:var(--jade);font-weight:700}
+.muted{color:var(--muted)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+a{color:var(--jade)}
+:focus-visible{outline:2px solid var(--jade);outline-offset:2px}
+
+/* 名帖 */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;padding-block:8px 26px;border-bottom:1px solid var(--line)}
+.tie{position:relative;border:1px solid var(--line);background:var(--card);padding:18px 14px 22px;border-radius:4px}
+.tie .v{writing-mode:vertical-rl;font-family:var(--serif);font-weight:900;font-size:3.1rem;letter-spacing:.14em;line-height:1}
+.seal{position:absolute;right:-12px;bottom:-12px;width:46px;height:46px;background:var(--seal);color:var(--seal-ink);
+  font-family:var(--serif);font-weight:900;font-size:.95rem;line-height:1.05;display:grid;place-items:center;text-align:center;
+  border-radius:3px;transform:rotate(-6deg)}
+.hero-txt{display:flex;flex-direction:column;gap:12px;min-width:0}
+.hero h1{font-size:1.6rem;line-height:1.3}
+.verdict{font-size:1.02rem}
+.verdict b{color:var(--jade)}
+.reasons{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.reasons li{padding-left:1.4em;position:relative}
+.reasons li::before{content:"";position:absolute;left:.3em;top:.72em;width:.45em;height:.45em;border-radius:50%;background:var(--jade)}
+.toc{display:flex;flex-wrap:wrap;gap:8px;padding-block:16px}
+.toc a{font-size:.85rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);padding:3px 11px;border-radius:999px;background:var(--card)}
+
+section{padding-block:30px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+section:last-of-type{border-bottom:0}
+.head{display:flex;flex-direction:column;gap:4px}
+.note{background:var(--jade-soft);padding:12px 14px;border-radius:6px;font-size:.94rem}
+.note.warn{background:var(--warn-soft)}
+.note b{color:var(--jade)}
+.note.warn b{color:var(--warn)}
+.label{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:1px 7px;border-radius:3px;border:1px solid currentColor;margin-right:6px;vertical-align:1px}
+.l-calc{color:var(--moon)} .l-trad{color:var(--warn)} .l-real{color:var(--jade)}
+
+.kv{display:grid;grid-template-columns:6.5em 1fr;gap:6px 14px;margin:0}
+.kv dt{color:var(--muted)} .kv dd{margin:0;min-width:0}
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:6px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-weight:700;color:var(--muted);font-size:.82rem;white-space:nowrap;background:var(--paper)}
+.pillars td,.pillars th{text-align:center}
+.pillars .big{font-family:var(--serif);font-size:1.7rem;font-weight:900;line-height:1.2}
+.pillars .dm{color:var(--fire)}
+td.nw{white-space:nowrap}
+
+/* 五行条 */
+.bars{display:flex;flex-direction:column;gap:9px}
+.bar{display:grid;grid-template-columns:2.2em 1fr 3.6em;gap:10px;align-items:center}
+.bar .k{font-family:var(--serif);font-weight:900;font-size:1.05rem}
+.bar .t{height:12px;background:var(--track);border-radius:6px;overflow:hidden}
+.bar .f{height:100%;border-radius:6px}
+.bar .p{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:.88rem}
+.c-wood{background:var(--wood)} .c-fire{background:var(--fire)} .c-earth{background:var(--earth)} .c-metal{background:var(--metal)} .c-water{background:var(--water)}
+.t-wood{color:var(--wood)} .t-fire{color:var(--fire)} .t-earth{color:var(--earth)} .t-metal{color:var(--metal)} .t-water{color:var(--water)}
+.zero{font-size:.8rem;color:var(--water);font-weight:700}
+
+/* 家庭 */
+.stack{display:flex;flex-direction:column;gap:10px}
+.srow{display:grid;grid-template-columns:4.6em 1fr;gap:10px;align-items:center}
+.srow .who{font-size:.88rem;font-weight:700}
+.sbar{display:flex;height:16px;border-radius:4px;overflow:hidden;background:var(--track)}
+.sbar span{height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:.82rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.fam{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.person{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.person .nm{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.person .gz{font-family:var(--serif);font-weight:700;letter-spacing:.08em}
+.person.me{border-color:var(--jade)}
+.quote{font-family:var(--serif);border-left:2px solid var(--jade);padding-left:10px;font-size:.93rem}
+
+/* 对决 */
+.duel th:nth-child(2),.duel td:nth-child(2){background:var(--good-soft)}
+.duel td{min-width:9.5em}
+.duel th:first-child,.duel td:first-child{min-width:4.5em;color:var(--muted);font-weight:700;font-size:.85rem}
+
+/* 榜单 */
+.list{display:flex;flex-direction:column;gap:14px}
+.cand{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px;position:relative}
+.cand.top{border:1.5px solid var(--jade)}
+.ch{display:grid;grid-template-columns:2.2em 1fr auto;gap:10px;align-items:center}
+.rk{font-family:var(--mono);font-size:1rem;color:var(--muted);text-align:center;border:1px solid var(--line);border-radius:50%;width:2.1em;height:2.1em;display:grid;place-items:center}
+.top .rk{background:var(--seal);color:var(--seal-ink);border-color:var(--seal)}
+.nm .n{font-family:var(--serif);font-weight:900;font-size:1.75rem;line-height:1.15;letter-spacing:.06em}
+.nm .py{font-size:.85rem;color:var(--muted);display:block}
+.score{text-align:right}
+.score .s{font-family:var(--mono);font-size:1.45rem;font-weight:500;font-variant-numeric:tabular-nums;color:var(--jade);line-height:1}
+.score .u{font-size:.72rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.78rem;padding:1px 8px;border-radius:3px;background:var(--paper);border:1px solid var(--line)}
+.tag.el{color:var(--chip-ink);border:0;font-weight:700}
+.tag.bad{color:var(--warn);border-color:var(--warn)}
+.tag.ok{color:var(--jade);border-color:var(--jade)}
+.src{font-family:var(--serif);font-size:.93rem;color:var(--muted)}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pc h4{margin:0 0 4px;font-size:.82rem;letter-spacing:.06em}
+.pc .g h4{color:var(--jade)} .pc .w h4{color:var(--warn)}
+.pc ul{margin:0;padding-left:1.1em;font-size:.92rem;display:flex;flex-direction:column;gap:3px}
+.pc>div{min-width:0}
+.dims{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 14px;padding-top:8px;border-top:1px dashed var(--line)}
+.dim{display:grid;grid-template-columns:1fr auto;gap:2px 6px;font-size:.76rem;color:var(--muted)}
+.dim .t{grid-column:1/-1;height:5px;background:var(--track);border-radius:3px;overflow:hidden}
+.dim .t i{display:block;height:100%;background:var(--jade);border-radius:3px}
+.dim b{font-family:var(--mono);font-weight:500;color:var(--ink)}
+.nick{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.nick span{font-family:var(--serif);font-weight:700;padding:2px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+
+.grades{display:grid;gap:10px}
+.grade{display:grid;grid-template-columns:6.2em 1fr;gap:10px;align-items:start;font-size:.94rem}
+footer{padding-block:26px 0;font-size:.82rem;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+
+@media (max-width:560px){
+  .wrap{padding-inline:16px}
+  .hero{grid-template-columns:1fr;justify-items:start}
+  .tie{padding:14px 18px 16px}
+  .tie .v{writing-mode:horizontal-tb;font-size:2.6rem;letter-spacing:.12em}
+  .fam,.pc{grid-template-columns:1fr}
+  .dims{grid-template-columns:repeat(2,1fr)}
+  .kv{grid-template-columns:5.2em 1fr}
+}
+@media (prefers-reduced-motion:no-preference){.bar .f,.dim .t i{transition:width .6s ease}}
+</style>
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap">
+<div class="wrap">
+<header class="hero">
+  <div class="tie"><div class="v">邵欣玥</div><div class="seal">首<br>推</div></div>
+  <div class="hero-txt">
+    <span class="eyebrow">邵家二千金 · 命名分析报告</span>
+    <h1>两个候选里选「邵欣玥」</h1>
+    <p class="muted">2026年10月10日（农历丙午年九月初一）巳时 · 贵阳南明区妇幼保健院</p>
+    <p class="verdict">12个备选综合评分，<b>邵欣玥 90.6</b> 排第一，比 <b>邵欣钰 70.2</b> 高 20.4 分（邵欣钰排第9）。</p>
+    <ul class="reasons">
+      <li><b>补得准。</b>宝宝命局火土合占74%，水为0。"玥"从玉（金）从月（"水气之精者为月"），一个字同时补金和水；"钰"只补金。</li>
+      <li><b>有来历。</b>她生在九月初一朔日，也就是新月当天。"欣玥"与"新月"同音，名字里记着出生那天的月亮。</li>
+      <li><b>配得上姐姐。</b>"瑶""玥"同属玉部。李白写"会向瑶台月下逢"，瑶台与月下，正好是姐妹俩。</li>
+      <li><b>钰的硬伤。</b>"邵欣钰"拼音 shao xin yu 与"少信誉"字母完全相同，只差声调。</li>
+    </ul>
+  </div>
+</header>
+<nav class="toc" aria-label="目录">
+  <a href="#birth">生辰校准</a><a href="#chart">命局取用</a><a href="#family">家庭合参</a><a href="#duel">钰玥对比</a><a href="#rank">12名榜单</a><a href="#check">实用核查</a><a href="#method">评分方法</a><a href="#grade">说明</a>
+</nav>
+
+<section id="birth">
+  <div class="head"><span class="eyebrow">一 · 生辰校准</span><h2>北京时间11:10，按真太阳时是巳时</h2></div>
+  <dl class="kv">
+    <dt>公历</dt><dd>2026年10月10日 星期六 11:10（北京时间）</dd>
+    <dt>农历</dt><dd>丙午年 九月初一，生肖属马</dd>
+    <dt>节气</dt><dd>寒露（10月8日 14:29）后第2天，霜降（10月23日）前，属戌月</dd>
+    <dt>月相</dt><dd>朔日（新月）。精确朔时为10月10日 23:50，出生在合朔前约12.7小时</dd>
+    <dt>出生地</dt><dd>贵阳市南明区，东经约106.71°</dd>
+    <dt>真太阳时</dt><dd class="num">11:10 − 53.2分（经度差） + 13.9分（均时差） ≈ 10:31 → 巳时（9–11点）</dd>
+  </dl>
+  <p class="note">北京时间是东经120°的钟表时间。贵阳在它西边13.3°，太阳实际晚到约53分钟，再加上10月的均时差，真太阳时约为10:31，离午时边界还有29分钟，换贵阳任何城区的经度都翻不过去。<b>如果按北京时间直接排，时柱为丙午。两种排法下"喜金水"的结论一致</b>，下文以真太阳时为准。</p>
+  <div class="tbl"><table class="pillars">
+    <tr><th></th><th>年柱</th><th>月柱</th><th>日柱</th><th>时柱</th></tr>
+    <tr><th>天干</th><td class="big">丙</td><td class="big">戊</td><td class="big dm">丁</td><td class="big">乙</td></tr>
+    <tr><th>地支</th><td class="big">午</td><td class="big">戌</td><td class="big">巳</td><td class="big">巳</td></tr>
+    <tr><th>十神</th><td>劫财</td><td>伤官</td><td>日主</td><td>偏印</td></tr>
+    <tr><th>藏干</th><td>丁 己</td><td>戊 辛 丁</td><td>丙 庚 戊</td><td>丙 庚 戊</td></tr>
+    <tr><th>纳音</th><td>天河水</td><td>平地木</td><td>沙中土</td><td>覆灯火</td></tr>
+  </table></div>
+</section>
+
+<section id="chart">
+  <div class="head"><span class="eyebrow">二 · 命局取用</span><h2>丁火日主，火土过燥，全局无水</h2></div>
+  <div class="bars">
+    <div class="bar"><span class="k t-fire">火</span><div class="t"><div class="f c-fire" style="width:82.0%"></div></div><span class="p">41.0%</span></div><div class="bar"><span class="k t-earth">土</span><div class="t"><div class="f c-earth" style="width:66.6%"></div></div><span class="p">33.3%</span></div><div class="bar"><span class="k t-metal">金</span><div class="t"><div class="f c-metal" style="width:30.8%"></div></div><span class="p">15.4%</span></div><div class="bar"><span class="k t-wood">木</span><div class="t"><div class="f c-wood" style="width:20.6%"></div></div><span class="p">10.3%</span></div><div class="bar"><span class="k t-water">水</span><div class="t"><div class="f c-water" style="width:0.0%"></div></div><span class="p">0.0%</span></div><div class="bar"><span></span><span class="zero">↑ 水在四柱中一点都没有</span><span></span></div>
+  </div>
+  <p class="muted" style="font-size:.85rem">计权：月支3.0、日支1.8、月干1.5、时干与时支各1.2、年干年支与日干各1.0；地支按藏干比例拆分（例：戌 = 戊60% + 辛30% + 丁10%）。按北京时间排（时柱丙午）则为火52.3%、土35.4%、金12.3%、木与水皆为0。</p>
+  <ul class="reasons">
+    <li>日主丁火坐巳、年支午，有禄有旺；年干丙火相帮，时干乙木生扶。同党（木+火）占51.3%，属<b>中和偏强</b>。</li>
+    <li>月令戌土，戊土透出月干，<b>伤官当令</b>。传统看法是聪慧、表达欲强、点子多。</li>
+    <li>最突出的问题不在强弱，在燥湿：<b>火土合占74.3%，水为0</b>，传统称"火炎土燥"。</li>
+  </ul>
+  <div class="tbl"><table>
+    <tr><th>取用方法</th><th>怎么看</th><th>取</th></tr>
+    <tr><td>扶抑（平衡强弱）</td><td>中和偏强，宜泄宜耗</td><td class="nw"><span class="t-metal"><b>金</b></span>（财）、<span class="t-water"><b>水</b></span>（官杀）</td></tr>
+    <tr><td>调候（平衡燥湿）</td><td>火土燥热，缺水润泽</td><td class="nw"><span class="t-water"><b>水</b></span>为先，<span class="t-metal"><b>金</b></span>生水次之</td></tr>
+    <tr><td>《穷通宝鉴》</td><td>论九月丁火"……先用甲木，次用庚金"</td><td class="nw"><span class="t-wood"><b>木</b></span>、<span class="t-metal"><b>金</b></span></td></tr>
+  </table></div>
+  <p class="note">三派共识：<b>金（三派都取） &gt; 水（两派） &gt; 木（一派） &gt; 火、土（已过多）</b>。所以名字首选金、水属性的字。字辈"欣"按通行起名字典归木，在《穷通宝鉴》一派属可用，不构成妨碍。</p>
+</section>
+
+<section id="family">
+  <div class="head"><span class="eyebrow">三 · 家庭合参</span><h2>爸爸缺金，宝宝缺水，"玥"字两头都补</h2></div>
+  <div class="stack">
+    <div class="srow"><span class="who">宝宝</span><div class="sbar" role="img" aria-label="宝宝 五行：木10.3%，火41.0%，土33.3%，金15.4%，水0%"><span class="c-wood" style="width:10.3%" title="木 10.3%"></span><span class="c-fire" style="width:41.0%" title="火 41.0%"></span><span class="c-earth" style="width:33.3%" title="土 33.3%"></span><span class="c-metal" style="width:15.4%" title="金 15.4%"></span></div></div>
+    <div class="srow"><span class="who">爸爸</span><div class="sbar" role="img" aria-label="爸爸 五行：木51.6%，火13.5%，土23.0%，金0%，水11.8%"><span class="c-wood" style="width:51.6%" title="木 51.6%"></span><span class="c-fire" style="width:13.5%" title="火 13.5%"></span><span class="c-earth" style="width:23.0%" title="土 23.0%"></span><span class="c-water" style="width:11.8%" title="水 11.8%"></span></div></div>
+    <div class="srow"><span class="who">妈妈</span><div class="sbar" role="img" aria-label="妈妈 五行：木19.0%，火14.2%，土14.7%，金34.2%，水17.9%"><span class="c-wood" style="width:19.0%" title="木 19.0%"></span><span class="c-fire" style="width:14.2%" title="火 14.2%"></span><span class="c-earth" style="width:14.7%" title="土 14.7%"></span><span class="c-metal" style="width:34.2%" title="金 34.2%"></span><span class="c-water" style="width:17.9%" title="水 17.9%"></span></div></div>
+    <div class="srow"><span class="who">姐姐</span><div class="sbar" role="img" aria-label="姐姐 五行：木16.4%，火3.1%，土42.9%，金21.4%，水16.2%"><span class="c-wood" style="width:16.4%" title="木 16.4%"></span><span class="c-fire" style="width:3.1%" title="火 3.1%"></span><span class="c-earth" style="width:42.9%" title="土 42.9%"></span><span class="c-metal" style="width:21.4%" title="金 21.4%"></span><span class="c-water" style="width:16.2%" title="水 16.2%"></span></div></div>
+    <div class="legend"><span><i class="c-wood"></i>木</span><span><i class="c-fire"></i>火</span><span><i class="c-earth"></i>土</span><span><i class="c-metal"></i>金</span><span><i class="c-water"></i>水</span><span>（爸爸未提供时辰，按三柱计）</span></div>
+  </div>
+  <div class="fam">
+    <div class="person"><div class="nm"><h3>爸爸 · 邵勇</h3><span class="gz">戊辰 乙卯 壬午</span></div>
+      <p>1988年3月28日（农历二月十一），属龙。<b>壬水日主</b>生卯月，木旺泄水，同党仅11.8%，身弱，喜金水；已知三柱无金。</p>
+      <p class="quote">《滴天髓》论丁火："抱乙而孝，合壬而忠。"女儿丁火与爸爸壬水天干相合。</p>
+      <p>名字补的金、水，正好也是爸爸的喜用。</p></div>
+    <div class="person"><div class="nm"><h3>妈妈 · 孙忠秀</h3><span class="gz">丙寅 己亥 辛酉 庚寅</span></div>
+      <p>农历1986年十月十二（公历11月13日），属虎。<b>辛金日主</b>生亥月，金寒水冷，最需火来暖。</p>
+      <p class="quote">《滴天髓》论辛金："热则喜母，寒则喜丁。"女儿正是丁火日主。</p>
+      <p>妈妈年支寅、女儿年支午、月支戌，凑成<b>寅午戌三合火局</b>。若出生在贵州且是北京时间3点刚过，真太阳时可能仍在丑时（时柱己丑），不影响日主判断。</p></div>
+    <div class="person"><div class="nm"><h3>姐姐 · 邵欣瑶</h3><span class="gz">庚子 己丑 己卯 辛未</span></div>
+      <p>2021年1月31日14:36（立春前，属鼠）。<b>己土日主</b>生丑月，寒土，火只占3.1%，最需暖。妹妹丁火生己土，是姐姐命局里缺的那团火。</p>
+      <p class="quote">李白《清平调》："若非群玉山头见，会向瑶台月下逢。"</p>
+      <p>姐姐"瑶"、妹妹"玥"（月），同属玉部，一句诗里正好相逢。</p></div>
+    <div class="person me"><div class="nm"><h3>宝宝 · 二女儿</h3><span class="gz">丙午 戊戌 丁巳 乙巳</span></div>
+      <p><b>丁火日主</b>，全家火最旺的人（41%）。爸爸、妈妈、姐姐的火分别只有13.5%、14.2%、3.1%。</p>
+      <p class="quote">《滴天髓》论丁火："丁火柔中，内性昭融……旺而不烈，衰而不穷。"</p>
+      <p>她本人带火来暖全家，名字则给她补上自己缺的金和水。</p></div>
+  </div>
+  <p class="note warn"><span class="label l-trad">传统约定</span>家庭合参依据《滴天髓》等命理典籍，有出处，但没有科学证据。它的价值在于给名字一个家人愿意讲给孩子听的故事。</p>
+</section>
+
+<section id="duel">
+  <div class="head"><span class="eyebrow">四 · 钰玥对比</span><h2>邵欣玥 对 邵欣钰</h2></div>
+  <div class="tbl"><table class="duel">
+    <tr><th>维度</th><th>邵欣玥 · 推荐</th><th>邵欣钰</th></tr>
+    <tr><td>五行</td><td>玉（金）+ 月（水）：<b>金水双补</b></td><td>金 + 玉：只补金，命局最缺的水没补</td></tr>
+    <tr><td>字义</td><td>神珠；名中藏月，生于朔日</td><td>珍宝、坚金，寓意直白</td></tr>
+    <tr><td>读音</td><td>xīn yuè，同"欣悦""新月"</td><td>全名 shao xin yu，字母同"少信誉"</td></tr>
+    <tr><td>与姐姐</td><td>瑶、玥同玉部；瑶台月下</td><td>钰含"玉"，但金字旁与"瑶"不成对</td></tr>
+    <tr><td>书写</td><td>简体8画，全名23画</td><td>简体10画，全名25画</td></tr>
+    <tr><td>字库</td><td>不在GB2312，个别老系统需人工处理</td><td>GB2312收录</td></tr>
+    <tr><td>重名</td><td>近年高频</td><td>近年高频</td></tr>
+    <tr><td>五格</td><td>地格17 · 外格10 · 总格29</td><td>地格21 · 外格14 · 总格33</td></tr>
+    <tr><td>综合分</td><td><b class="num">90.6</b>（第1）</td><td><b class="num">70.2</b>（第9）</td></tr>
+  </table></div>
+  <p class="note"><b>结论：用邵欣玥。</b>它唯一的实务短板是GB2312字库不含"玥"。身份证、户籍、学籍、医保、主流银行都已用GB18030，可以正常录入；遇到个别老旧打印设备，柜台可手工处理。这个代价远小于"少信誉"这个谐音跟孩子一辈子。</p>
+</section>
+
+<section id="rank">
+  <div class="head"><span class="eyebrow">五 · 12名榜单</span><h2>按推荐程度从高到低</h2>
+  <p class="muted">全部保留字辈"欣"，与姐姐"邵欣瑶"成一套。每项0–10分，加权后换算成百分制。</p></div>
+  <div class="list"><article class="cand top">
+  <div class="ch"><span class="rk">1</span><div class="nm"><span class="n">邵欣玥</span><span class="py">shào xīn yuè</span></div><div class="score"><div class="s">90.6</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag el c-water">水</span><span class="tag ok">玉部 · 与"瑶"同</span><span class="tag bad">GB2312未收</span><span class="tag">声调 去·阴·去</span></div>
+  <p>字典释为&quot;古代传说中的神珠&quot;。从玉从月：玉属金，月为太阴。</p>
+  <p class="src">《淮南子·天文训》&quot;水气之精者为月&quot;；李白《清平调》&quot;若非群玉山头见，会向瑶台月下逢&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>一个字同时补金和水，正好对上命局&quot;缺水、喜金&quot;</li><li>不带三点水就得了水意，生肖字根派也挑不出毛病</li><li>生于九月初一朔日（新月），&quot;欣玥&quot;与&quot;新月&quot;&quot;欣悦&quot;完全同音</li><li>与姐姐&quot;瑶&quot;同属玉部，&quot;瑶台月下&quot;恰是姐妹二人</li><li>丁火如灯，月为夜光，意象相合</li></ul></div><div class="w"><h4>留意</h4><ul><li>近年女孩名高频字，同龄人里重名机会偏高</li><li>不在GB2312字库，个别老旧系统需人工处理；现行身份证与户籍系统用GB18030，可正常录入</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>10</b><div class="t"><i style="width:100%"></i></div></div><div class="dim"><span>字义出处</span><b>10</b><div class="t"><i style="width:100%"></i></div></div><div class="dim"><span>音韵谐音</span><b>9</b><div class="t"><i style="width:90%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>9</b><div class="t"><i style="width:90%"></i></div></div><div class="dim"><span>实用便利</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">2</span><div class="nm"><span class="n">邵欣琬</span><span class="py">shào xīn wǎn</span></div><div class="score"><div class="s">80.7</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag ok">玉部 · 与"瑶"同</span><span class="tag">声调 去·阴·上</span></div>
+  <p>琬，圭之无锋棱者，圆润温和，古人用来象征德行。</p>
+  <p class="src">《周礼·考工记·玉人》&quot;琬圭九寸而缫，以象德&quot;；《尚书·顾命》&quot;弘璧、琬、琰，在西序&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>与&quot;瑶&quot;同属玉部，姐妹名字成对</li><li>去、阴、上三个声调各不相同，读起来起伏最好听</li><li>寓意温润有德，可调和命局火旺带来的锐气</li><li>用字雅而不俗，重名少</li></ul></div><div class="w"><h4>留意</h4><ul><li>只补金，不补水</li><li>少数人会把&quot;琬&quot;读成 wàn 或认作&quot;婉&quot;，第一次需要纠正</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>字义出处</span><b>9</b><div class="t"><i style="width:90%"></i></div></div><div class="dim"><span>音韵谐音</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>实用便利</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">3</span><div class="nm"><span class="n">邵欣澄</span><span class="py">shào xīn chéng</span></div><div class="score"><div class="s">75.8</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-water">水</span><span class="tag bad">带三点水</span><span class="tag">声调 去·阴·阳</span></div>
+  <p>澄，水静而清，引申为心境清明。</p>
+  <p class="src">谢朓《晚登三山还望京邑》&quot;余霞散成绮，澄江静如练&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>直接补水，最对&quot;火炎土燥&quot;的症</li><li>&quot;欣澄&quot;与&quot;心诚&quot;同音</li><li>字义沉静，正好平衡火旺之人的急性子</li><li>常用字，好认不生僻，重名少</li></ul></div><div class="w"><h4>留意</h4><ul><li>只补水，不补金</li><li>带三点水，若长辈信&quot;生肖字根&quot;一派（属马忌水）会有异议；该派是近代商业体系，本报告不采信</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>字义出处</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>音韵谐音</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">4</span><div class="nm"><span class="n">邵欣锦</span><span class="py">shào xīn jǐn</span></div><div class="score"><div class="s">74.8</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag">声调 去·阴·上</span></div>
+  <p>锦，有彩色花纹的丝织品；前程似锦。</p>
+  <p class="src">柳宗元《乞巧文》&quot;骈四俪六，锦心绣口&quot;，&quot;锦心&quot;喻文思优美。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>金字旁，直补金</li><li>去、阴、上三声起伏</li><li>&quot;锦心绣口&quot;寓意才思出众</li><li>字形端正，不生僻</li></ul></div><div class="w"><h4>留意</h4><ul><li>不补水</li><li>字义偏华丽，在同龄人名字里略显传统</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>字义出处</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>音韵谐音</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">5</span><div class="nm"><span class="n">邵欣沅</span><span class="py">shào xīn yuán</span></div><div class="score"><div class="s">74.6</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-water">水</span><span class="tag bad">带三点水</span><span class="tag">声调 去·阴·阳</span></div>
+  <p>沅，沅水，楚辞里香草美人之水。</p>
+  <p class="src">《楚辞·九歌·湘夫人》&quot;沅有芷兮澧有兰，思公子兮未敢言&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>沅江上源清水江发源于贵州，贵阳出生的孩子名字里带一条家乡的河</li><li>直补水</li><li>&quot;欣沅&quot;音近&quot;心愿&quot;</li><li>常用字，重名少</li></ul></div><div class="w"><h4>留意</h4><ul><li>只补水；带三点水（同上生肖字根说法）</li><li>yuán 与姐姐的 yáo 同声母、同为阳平，在家喊名稍近</li><li>五格总格28，数理书里列为欠佳</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>字义出处</span><b>9</b><div class="t"><i style="width:90%"></i></div></div><div class="dim"><span>音韵谐音</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>实用便利</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>五格数理</span><b>4</b><div class="t"><i style="width:40%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">6</span><div class="nm"><span class="n">邵欣瑜</span><span class="py">shào xīn yú</span></div><div class="score"><div class="s">74.1</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag ok">玉部 · 与"瑶"同</span><span class="tag">声调 去·阴·阳</span></div>
+  <p>瑜，美玉；&quot;瑕不掩瑜&quot;指优点远多于缺点。</p>
+  <p class="src">屈原《九章·怀沙》&quot;怀瑾握瑜兮，穷不知所示&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>玉部，与&quot;瑶&quot;同为美玉，寓意最贴姐姐的名字</li><li>&quot;欣瑜&quot;与&quot;欣愉&quot;同音</li><li>字义端正，出处高</li></ul></div><div class="w"><h4>留意</h4><ul><li>yú 与 yáo 同声母、同为阳平，在家喊&quot;瑜瑜&quot;&quot;瑶瑶&quot;容易听混</li><li>五格地格22、总格34，数理书列为欠佳</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>字义出处</span><b>9</b><div class="t"><i style="width:90%"></i></div></div><div class="dim"><span>音韵谐音</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>5</b><div class="t"><i style="width:50%"></i></div></div><div class="dim"><span>实用便利</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>五格数理</span><b>2</b><div class="t"><i style="width:20%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">7</span><div class="nm"><span class="n">邵欣璇</span><span class="py">shào xīn xuán</span></div><div class="score"><div class="s">73.5</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag ok">玉部 · 与"瑶"同</span><span class="tag">声调 去·阴·阳</span></div>
+  <p>璇，美玉；璇玑是北斗前四星。</p>
+  <p class="src">《尚书·舜典》&quot;在璿（璇）玑玉衡，以齐七政&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>玉部，与姐姐成对</li><li>丁火是星烛之火，北斗意象相合</li><li>五格数理良好</li></ul></div><div class="w"><h4>留意</h4><ul><li>xīn xuán 两字同为 x 声母，连读略拗口</li><li>&quot;欣璇&quot;与&quot;心悬&quot;同音，有担忧之意，影响轻微</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>字义出处</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>音韵谐音</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">8</span><div class="nm"><span class="n">邵欣珂</span><span class="py">shào xīn kē</span></div><div class="score"><div class="s">72.8</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag ok">玉部 · 与"瑶"同</span><span class="tag">声调 去·阴·阴</span></div>
+  <p>珂，似玉的美石；&quot;玉珂&quot;是马笼头上的玉饰。</p>
+  <p class="src">&quot;鸣珂&quot;一词指马饰相击之声，旧时形容显贵出行。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>宝宝属马，&quot;玉珂&quot;本是马饰，生肖意象贴合</li><li>&quot;欣珂&quot;与&quot;新科&quot;同音，有金榜题名之意</li><li>笔画少，五格数理在本组最好之一</li></ul></div><div class="w"><h4>留意</h4><ul><li>欣、珂两个阴平连读，声调偏平</li><li>字义是&quot;次于玉的美石&quot;，寓意比瑶、瑜略逊</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>字义出处</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>音韵谐音</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">9</span><div class="nm"><span class="n">邵欣钰</span><span class="py">shào xīn yù</span></div><div class="score"><div class="s">70.2</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-metal">金</span><span class="tag">声调 去·阴·去</span></div>
+  <p>钰，珍宝，坚金。</p>
+  <p class="src">常用名字用字，无特定典籍出处。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>金字旁，直补金</li><li>GB2312收录，任何系统都能打出</li><li>字义直白，长辈容易接受</li></ul></div><div class="w"><h4>留意</h4><ul><li>全名拼音 shao xin yu 与&quot;少信誉&quot;字母完全相同，只差声调，上学后有被起外号的可能</li><li>只补金，不补水，没解决命局最缺的那一项</li><li>近年高频字，重名机会偏高</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>字义出处</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>音韵谐音</span><b>5</b><div class="t"><i style="width:50%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">10</span><div class="nm"><span class="n">邵欣泠</span><span class="py">shào xīn líng</span></div><div class="score"><div class="s">67.9</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-water">水</span><span class="tag bad">带三点水</span><span class="tag">声调 去·阴·阳</span></div>
+  <p>泠，清凉；形容声音清越。</p>
+  <p class="src">刘长卿《弹琴》&quot;泠泠七弦上，静听松风寒&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>补水</li><li>&quot;欣泠&quot;与&quot;心灵&quot;同音</li><li>字义清雅</li></ul></div><div class="w"><h4>留意</h4><ul><li>&quot;泠&quot;常被误读误写成&quot;冷&quot;，以后要反复纠正</li><li>带三点水（同上生肖字根说法）</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>字义出处</span><b>8</b><div class="t"><i style="width:80%"></i></div></div><div class="dim"><span>音韵谐音</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>5</b><div class="t"><i style="width:50%"></i></div></div><div class="dim"><span>五格数理</span><b>8</b><div class="t"><i style="width:80%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">11</span><div class="nm"><span class="n">邵欣滢</span><span class="py">shào xīn yíng</span></div><div class="score"><div class="s">66.3</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-water">水</span><span class="tag bad">带三点水</span><span class="tag">声调 去·阴·阳</span></div>
+  <p>滢，水清澈，取&quot;晶莹&quot;之意。</p>
+  <p class="src">无经典出处，属现代取名用字。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>补水</li><li>字形清秀</li></ul></div><div class="w"><h4>留意</h4><ul><li>yíng 与 yáo 同声母、同为阳平，喊名稍近</li><li>带三点水（同上生肖字根说法）</li><li>五格外格20，数理书列为欠佳</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>字义出处</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>音韵谐音</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>6</b><div class="t"><i style="width:60%"></i></div></div><div class="dim"><span>实用便利</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>五格数理</span><b>6</b><div class="t"><i style="width:60%"></i></div></div></div>
+</article><article class="cand">
+  <div class="ch"><span class="rk">12</span><div class="nm"><span class="n">邵欣霁</span><span class="py">shào xīn jì</span></div><div class="score"><div class="s">64.9</div><div class="u">综合分</div></div></div>
+  <div class="tags"><span class="tag el c-water">水</span><span class="tag">声调 去·阴·去</span></div>
+  <p>霁，雨雪停止、天放晴。</p>
+  <p class="src">黄庭坚《濂溪诗序》&quot;胸中洒落，如光风霁月&quot;。</p>
+  <div class="pc"><div class="g"><h4>好在</h4><ul><li>雨部得水意，不带三点水</li><li>&quot;光风霁月&quot;喻胸襟坦荡，寓意在本组最高之一</li></ul></div><div class="w"><h4>留意</h4><ul><li>&quot;欣霁&quot;与医学名词&quot;心悸&quot;完全同音（xīn jì）</li><li>简体14画，小学低年级写名字吃力</li></ul></div></div>
+  <div class="dims"><div class="dim"><span>八字补益</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>字义出处</span><b>9</b><div class="t"><i style="width:90%"></i></div></div><div class="dim"><span>音韵谐音</span><b>4</b><div class="t"><i style="width:40%"></i></div></div><div class="dim"><span>姐妹呼应</span><b>7</b><div class="t"><i style="width:70%"></i></div></div><div class="dim"><span>实用便利</span><b>5</b><div class="t"><i style="width:50%"></i></div></div><div class="dim"><span>五格数理</span><b>6</b><div class="t"><i style="width:60%"></i></div></div></div>
+</article></div>
+  <div class="nick"><b>乳名可配：</b><span>初一</span><span>小月亮</span><span>玥玥</span><span class="muted" style="border:0;background:none;font-family:var(--sans);font-weight:400;padding:0">"初一"记生日，"小月亮"呼应"玥"字。</span></div>
+</section>
+
+<section id="check">
+  <div class="head"><span class="eyebrow">六 · 实用核查</span><h2>好写、好认、打得出、不撞音</h2></div>
+  <div class="tbl"><table>
+    <tr><th>名字</th><th>末字/全名笔画</th><th>GB2312</th><th>声调</th><th>谐音</th><th>三点水</th></tr><tr><td class="nw"><b>邵欣玥</b></td><td class="num">8 / 23</td><td>✗</td><td class="nw">去·阴·去</td><td>同&quot;欣悦&quot;&quot;新月&quot;（正面）</td><td>—</td></tr><tr><td class="nw"><b>邵欣琬</b></td><td class="num">12 / 27</td><td>✓</td><td class="nw">去·阴·上</td><td>无常用词撞音</td><td>—</td></tr><tr><td class="nw"><b>邵欣澄</b></td><td class="num">15 / 30</td><td>✓</td><td class="nw">去·阴·阳</td><td>同&quot;心诚&quot;（正面）</td><td>有</td></tr><tr><td class="nw"><b>邵欣锦</b></td><td class="num">13 / 28</td><td>✓</td><td class="nw">去·阴·上</td><td>无明显撞音</td><td>—</td></tr><tr><td class="nw"><b>邵欣沅</b></td><td class="num">7 / 22</td><td>✓</td><td class="nw">去·阴·阳</td><td>近&quot;心愿&quot;（正面）</td><td>有</td></tr><tr><td class="nw"><b>邵欣瑜</b></td><td class="num">13 / 28</td><td>✓</td><td class="nw">去·阴·阳</td><td>同&quot;欣愉&quot;（正面）</td><td>—</td></tr><tr><td class="nw"><b>邵欣璇</b></td><td class="num">15 / 30</td><td>✓</td><td class="nw">去·阴·阳</td><td>同&quot;心悬&quot;（轻微）</td><td>—</td></tr><tr><td class="nw"><b>邵欣珂</b></td><td class="num">9 / 24</td><td>✓</td><td class="nw">去·阴·阴</td><td>同&quot;新科&quot;（正面）</td><td>—</td></tr><tr><td class="nw"><b>邵欣钰</b></td><td class="num">10 / 25</td><td>✓</td><td class="nw">去·阴·去</td><td>拼音同&quot;少信誉&quot;（负面）</td><td>—</td></tr><tr><td class="nw"><b>邵欣泠</b></td><td class="num">8 / 23</td><td>✓</td><td class="nw">去·阴·阳</td><td>同&quot;心灵&quot;（正面）</td><td>有</td></tr><tr><td class="nw"><b>邵欣滢</b></td><td class="num">13 / 28</td><td>✓</td><td class="nw">去·阴·阳</td><td>无明显撞音</td><td>有</td></tr><tr><td class="nw"><b>邵欣霁</b></td><td class="num">14 / 29</td><td>✓</td><td class="nw">去·阴·去</td><td>同&quot;心悸&quot;（负面）</td><td>—</td></tr>
+  </table></div>
+  <p class="note"><span class="label l-real">真实有效</span>这一节不依赖命理，对孩子有实际影响。姐姐"邵欣瑶"的声调是 去·阴·阳；妹妹选去声收尾的"玥"，两个名字在家里喊起来分得清。</p>
+</section>
+
+<section id="method">
+  <div class="head"><span class="eyebrow">七 · 评分方法</span><h2>六项加权，分数可复算</h2></div>
+  <div class="tbl"><table><tr><th>维度</th><th>权重</th><th>看什么</th></tr><tr><td class="nw">八字补益</td><td class="num">30%</td><td>名字用字的五行是否落在命局喜用（金 &gt; 水 &gt; 木），是否避开已过多的火、土。五行按字形部首与字义判定。</td></tr><tr><td class="nw">字义出处</td><td class="num">20%</td><td>字义是否正面，有无可靠的经典出处，与生辰、家人能否形成可讲述的联系。</td></tr><tr><td class="nw">音韵谐音</td><td class="num">20%</td><td>全名声调起伏，有无负面谐音，连读是否拗口。</td></tr><tr><td class="nw">姐妹呼应</td><td class="num">12%</td><td>与"邵欣瑶"在用字风格上成对，同时喊名能分清。</td></tr><tr><td class="nw">实用便利</td><td class="num">13%</td><td>笔画多少、是否易读错、GB2312字库是否收录、近年重名程度。</td></tr><tr><td class="nw">五格数理</td><td class="num">5%</td><td>五格剖象法，见下表。权重最低，原因见说明。</td></tr></table></div>
+  <p class="muted" style="font-size:.88rem">综合分 = Σ（维度分 × 权重）× 10。同分时八字补益分高者在前。五格分 = 5 + 2×地格 + 2×总格 + 1×外格（吉记+1，平记0，欠记−1）。</p>
+  <h3>五格数理（康熙笔画，仅供参考）</h3>
+  <div class="tbl"><table><tr><th>名字</th><th>康熙笔画</th><th>天格</th><th>人格</th><th>地格</th><th>外格</th><th>总格</th></tr><tr><td class="nw"><b>邵欣玥</b></td><td class="num">12·8·9</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">17 吉</td><td class="num">10 欠</td><td class="num">29 吉</td></tr><tr><td class="nw"><b>邵欣琬</b></td><td class="num">12·8·13</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">21 吉</td><td class="num">14 欠</td><td class="num">33 吉</td></tr><tr><td class="nw"><b>邵欣澄</b></td><td class="num">12·8·16</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">24 吉</td><td class="num">17 吉</td><td class="num">36 平</td></tr><tr><td class="nw"><b>邵欣锦</b></td><td class="num">12·8·16</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">24 吉</td><td class="num">17 吉</td><td class="num">36 平</td></tr><tr><td class="nw"><b>邵欣沅</b></td><td class="num">12·8·8</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">16 吉</td><td class="num">9 欠</td><td class="num">28 欠</td></tr><tr><td class="nw"><b>邵欣瑜</b></td><td class="num">12·8·14</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">22 欠</td><td class="num">15 吉</td><td class="num">34 欠</td></tr><tr><td class="nw"><b>邵欣璇</b></td><td class="num">12·8·16</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">24 吉</td><td class="num">17 吉</td><td class="num">36 平</td></tr><tr><td class="nw"><b>邵欣珂</b></td><td class="num">12·8·10</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">18 吉</td><td class="num">11 吉</td><td class="num">30 平</td></tr><tr><td class="nw"><b>邵欣钰</b></td><td class="num">12·8·13</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">21 吉</td><td class="num">14 欠</td><td class="num">33 吉</td></tr><tr><td class="nw"><b>邵欣泠</b></td><td class="num">12·8·9</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">17 吉</td><td class="num">10 欠</td><td class="num">29 吉</td></tr><tr><td class="nw"><b>邵欣滢</b></td><td class="num">12·8·19</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">27 平</td><td class="num">20 欠</td><td class="num">39 吉</td></tr><tr><td class="nw"><b>邵欣霁</b></td><td class="num">12·8·22</td><td class="num">13 吉</td><td class="num">20 欠</td><td class="num">30 平</td><td class="num">23 吉</td><td class="num">42 平</td></tr></table></div>
+  <p class="note warn"><b>关于人格20。</b>"邵"12画加"欣"8画，人格固定为20，数理书列为欠佳；姐姐"邵欣瑶"也是20。要改人格只能换掉"欣"，代价是姐妹字辈不统一。五格剖象法是日本人熊崎健翁在1918年前后创立的，中国传统命名并不使用，各书的吉数表也不一致，所以本报告只给它5%的权重，<b>不建议为此放弃"欣"字</b>。</p>
+</section>
+
+<section id="grade">
+  <div class="head"><span class="eyebrow">八 · 说明</span><h2>哪些可以验证，哪些是传统</h2></div>
+  <div class="grades">
+    <div class="grade"><span class="label l-calc">可复算</span><p>真太阳时、四柱、朔望时刻、五行占比、五格笔画、综合评分。按文中公式任何人都能算出同样的数。</p></div>
+    <div class="grade"><span class="label l-trad">传统约定</span><p>喜用神、《滴天髓》《穷通宝鉴》论断、家庭合参、生肖意象。历代成法，有出处，但"名字五行影响命运"从未被科学验证。</p></div>
+    <div class="grade"><span class="label l-real">真实有效</span><p>读音、谐音、好写好认、字库兼容、重名率、与姐姐名字的协调。不信命理也成立，对孩子的实际影响最大。</p></div>
+  </div>
+  <p class="note">一个名字真正要做到的，是叫起来顺口、写起来顺手、被叫一辈子不尴尬，并且装着父母的心意。<b>邵欣玥</b>在这几条上都过得去，在命理那一栏也站得住。</p>
+</section>
+<footer>
+  <span>排盘：寿星天文历算法（lunar_python 1.4.8）计算四柱、节气与朔望；真太阳时 = 北京时间 + (106.71 − 120) × 4分 + 均时差。</span>
+  <span>资料：妈妈时辰按"凌晨3点以后"取寅时；爸爸未提供时辰，按年、月、日三柱分析；姐姐出生地未提供，按北京时间排，时柱在两种算法下均为辛未。</span>
+  <span>报告生成于2026年10月12日。</span>
+</footer>
+</div>
+
+</body>
+</html>
